@@ -1,5 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    Homepage.
+<canvas id="myCanvas" width="800" height="400" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+{% endblock %}
+
+{% block javascripts %}
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+var img=new Image()
+img.src="/1.jpg"
+cxt.drawImage(img,0,0);
+
+</script>
 {% endblock %}
