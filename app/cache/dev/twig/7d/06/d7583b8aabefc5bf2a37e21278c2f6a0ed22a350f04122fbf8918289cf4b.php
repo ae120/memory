@@ -11,7 +11,6 @@ class __TwigTemplate_7d06d7583b8aabefc5bf2a37e21278c2f6a0ed22a350f04122fbf891828
 
         $this->blocks = array(
             'body' => array($this, 'block_body'),
-            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -29,25 +28,7 @@ class __TwigTemplate_7d06d7583b8aabefc5bf2a37e21278c2f6a0ed22a350f04122fbf891828
     public function block_body($context, array $blocks = array())
     {
         // line 4
-        echo "<canvas id=\"myCanvas\" width=\"800\" height=\"400\" style=\"border:1px solid #c3c3c3;\">
-Your browser does not support the canvas element.
-</canvas>
-";
-    }
-
-    // line 9
-    public function block_javascripts($context, array $blocks = array())
-    {
-        // line 10
-        echo "<script type=\"text/javascript\">
-
-var c=document.getElementById(\"myCanvas\");
-var cxt=c.getContext(\"2d\");
-var img=new Image()
-img.src=\"/1.jpg\"
-cxt.drawImage(img,0,0);
-
-</script>
+        echo "    Homepage.123
 ";
     }
 
@@ -63,6 +44,6 @@ cxt.drawImage(img,0,0);
 
     public function getDebugInfo()
     {
-        return array (  42 => 10,  39 => 9,  32 => 4,  29 => 3,);
+        return array (  31 => 4,  28 => 3,);
     }
 }

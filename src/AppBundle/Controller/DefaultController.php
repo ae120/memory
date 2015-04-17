@@ -14,4 +14,9 @@ class DefaultController extends Controller
     {
         return $this->render('default/index.html.twig');
     }
+
+    public function testAction()
+    {
+        return $this->render('default/test.html.twig');
+    }
 }
