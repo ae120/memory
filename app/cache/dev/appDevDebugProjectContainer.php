@@ -3827,6 +3827,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addExtension($this->get('twig.extension.acme.demo'));
         $instance->addExtension(new \Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension());
         $instance->addGlobal('app', $this->get('templating.globals'));
+        $instance->addGlobal('site_tracking', false);
 
         return $instance;
     }

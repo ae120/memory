@@ -12,11 +12,14 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('default/index.html.twig');
+        return $this->render('AppBundle::test/index.html.twig');
     }
 
+    /**
+     * @Route("/test", name="test")
+     */
     public function testAction()
     {
-        return $this->render('default/test.html.twig');
+        return $this->render('AppBundle:test:test.html.twig');
     }
 }
